@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="31">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"Inf. Health"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>Heroes.exe+49E7A0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>7</ID>
+      <Description>"Plane Speed 0.5 Good for torpedo bombing."</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>define(address,"Heroes.exe"+2B669A)
+define(bytes,F3 0F 10 42 3C)
+
+[ENABLE]
+assert(address,bytes)
+alloc(newmem,$1000)
+
+label(code)
+label(return)
+
+newmem:
+  mov [edx+3C],(float)30
+
+code:
+  //movss xmm0,[edx+3C]
+  jmp return
+
+address:
+  jmp newmem
+return:
+
+[DISABLE]
+address:
+  db bytes
+dealloc(newmem)
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>8</ID>
+      <Description>"Plane Speed 1.5x"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>define(address,"Heroes.exe"+2B669A)
+define(bytes,F3 0F 10 42 3C)
+
+[ENABLE]
+assert(address,bytes)
+alloc(newmem,$1000)
+
+label(code)
+label(return)
+
+newmem:
+  mov [edx+3C],(float)120
+
+code:
+  //movss xmm0,[edx+3C]
+  jmp return
+
+address:
+  jmp newmem
+return:
+
+[DISABLE]
+address:
+  db bytes
+dealloc(newmem)
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>9</ID>
+      <Description>"Plane Speed 2.0x"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>define(address,"Heroes.exe"+2B669A)
+define(bytes,F3 0F 10 42 3C)
+
+[ENABLE]
+assert(address,bytes)
+alloc(newmem,$1000)
+
+label(code)
+label(return)
+
+newmem:
+  mov [edx+3C],(float)200
+
+code:
+  //movss xmm0,[edx+3C]
+  jmp return
+
+address:
+  jmp newmem
+return:
+
+[DISABLE]
+address:
+  db bytes
+dealloc(newmem)
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>10</ID>
+      <Description>"Plane Speed 2.5x"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>define(address,"Heroes.exe"+2B669A)
+define(bytes,F3 0F 10 42 3C)
+
+[ENABLE]
+assert(address,bytes)
+alloc(newmem,$1000)
+
+label(code)
+label(return)
+
+newmem:
+  mov [edx+3C],(float)250
+
+code:
+  //movss xmm0,[edx+3C]
+  jmp return
+
+address:
+  jmp newmem
+return:
+
+[DISABLE]
+address:
+  db bytes
+dealloc(newmem)
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>11</ID>
+      <Description>"Plane Speed 3.0x"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>define(address,"Heroes.exe"+2B669A)
+define(bytes,F3 0F 10 42 3C)
+
+[ENABLE]
+assert(address,bytes)
+alloc(newmem,$1000)
+
+label(code)
+label(return)
+
+newmem:
+  mov [edx+3C],(float)300
+
+code:
+  //movss xmm0,[edx+3C]
+  jmp return
+
+address:
+  jmp newmem
+return:
+
+[DISABLE]
+address:
+  db bytes
+dealloc(newmem)
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>12</ID>
+      <Description>"Plane Speed 5.0x"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>define(address,"Heroes.exe"+2B669A)
+define(bytes,F3 0F 10 42 3C)
+
+[ENABLE]
+assert(address,bytes)
+alloc(newmem,$1000)
+
+label(code)
+label(return)
+
+newmem:
+  mov [edx+3C],(float)500
+
+code:
+  //movss xmm0,[edx+3C]
+  jmp return
+
+address:
+  jmp newmem
+return:
+
+[DISABLE]
+address:
+  db bytes
+dealloc(newmem)
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>14</ID>
+      <Description>"Plane Speed (Gauss)"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>define(address,"Heroes.exe"+2B669A)
+define(bytes,F3 0F 10 42 3C)
+
+[ENABLE]
+assert(address,bytes)
+alloc(newmem,$1000)
+
+label(code)
+label(return)
+
+newmem:
+  mov [edx+3C],(float)1250
+
+code:
+  //movss xmm0,[edx+3C]
+  jmp return
+
+address:
+  jmp newmem
+return:
+
+[DISABLE]
+address:
+  db bytes
+dealloc(newmem)
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>13</ID>
+      <Description>"Plane Speed (Millennium Falcon)"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>define(address,"Heroes.exe"+2B669A)
+define(bytes,F3 0F 10 42 3C)
+
+[ENABLE]
+assert(address,bytes)
+alloc(newmem,$1000)
+
+label(code)
+label(return)
+
+newmem:
+  mov [edx+3C],(float)5000
+
+code:
+  //movss xmm0,[edx+3C]
+  jmp return
+
+address:
+  jmp newmem
+return:
+
+[DISABLE]
+address:
+  db bytes
+dealloc(newmem)
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>15</ID>
+      <Description>"Coordinate 1"</Description>
+      <VariableType>Float</VariableType>
+      <Address>fmod.dll+6310C</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>16</ID>
+      <Description>"Auto Assemble script"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+aobscanmodule(Cya,fmod.dll,D9 98 0C 31 06 10) // should be unique
+alloc(newmem,$1000)
+
+label(code)
+label(return)
+
+newmem:
+  mov dword ptr [eax+fmod.dll+0C],(float)1500
+
+code:
+  //fstp dword ptr [eax+fmod.dll+6310C]
+  jmp return
+
+Cya:
+  jmp newmem
+  nop
+return:
+registersymbol(Cya)
+
+[DISABLE]
+Cya:
+  db D9 98 0C 31 06 10
+
+unregistersymbol(Cya)
+dealloc(newmem)
+</AssemblerScript>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
